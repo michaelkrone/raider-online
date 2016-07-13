@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 export type Mood = 'realistic' | 'utopic';
 export enum AdverbParam {Off, On};
 
-const host = 'http://localhost:4001';
+const host = 'http://raider.doneright.de';
 
 export type Options = {
 	char: string,

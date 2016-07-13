@@ -1,0 +1,68 @@
+{
+  "name": "raider-online",
+  "version": "0.0.1",
+  "description": "A simple webinterface for raider",
+  "scripts": {
+    "typings-install": "typings install",
+    "postinstall": "npm run typings-install",
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base src",
+    "start": "npm run server"
+  },
+  "contributors": [
+    "Michael Krone <michael.krone@outlook.com>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "angular2-template-loader": "^0.4.0",
+    "awesome-typescript-loader": "^1.1.1",
+    "css-loader": "^0.23.1",
+    "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "source-map-loader": "^0.1.5",
+    "to-string-loader": "^1.1.4",
+    "typescript": "~1.8.9",
+    "typings": "~1.0.3",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.8.4"
+  },
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.3",
+    "@angular/compiler": "2.0.0-rc.3",
+    "@angular/core": "2.0.0-rc.3",
+    "@angular/forms": "^0.1.1",
+    "@angular/http": "2.0.0-rc.3",
+    "@angular/platform-browser": "2.0.0-rc.3",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
+    "@angular/platform-server": "2.0.0-rc.3",
+    "@angular/router": "3.0.0-alpha.8",
+    "@angular2-material/button": "2.0.0-alpha.6",
+    "@angular2-material/card": "2.0.0-alpha.6",
+    "@angular2-material/checkbox": "^2.0.0-alpha.6",
+    "@angular2-material/core": "2.0.0-alpha.6",
+    "@angular2-material/input": "2.0.0-alpha.6",
+    "@angular2-material/radio": "^2.0.0-alpha.6",
+    "@angular2-material/sidenav": "2.0.0-alpha.6",
+    "@angular2-material/toolbar": "2.0.0-alpha.6",
+    "core-js": "^2.2.0",
+    "ie-shim": "^0.1.0",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "~0.6.12"
+  },
+  "keywords": [
+    "raider",
+    "sprint names online",
+    "raider web interface",
+		"sprint name generator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelkrone/raider-online.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelkrone/raider-online/issues"
+  },
+  "homepage": "https://github.com/michaelkrone/raider-online#readme"
+}

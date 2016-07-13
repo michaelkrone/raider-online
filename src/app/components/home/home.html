@@ -1,0 +1,7 @@
+
+<sprint-name (get)="name = $event"></sprint-name>
+
+<md-card>
+	<md-card-title *ngIf="name">{{name}}</md-card-title>
+	<span *ngIf="!name">Generate your sprint name ...</span>
+</md-card>

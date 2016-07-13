@@ -1,0 +1,32 @@
+<md-card>
+
+	<md-card-title-group>
+		<md-card-title>Generate a{{params.mood === 'utopic' ? 'n' : ''}} {{params.mood}} sprint name {{params.char ? 'with ' + '\'' + params.char + '\'' : ''}}</md-card-title>
+		<md-card-subtitle>Use grumpy animal alliterations for your sprint names</md-card-subtitle>
+	</md-card-title-group>
+
+	<md-card-content  class="flex row">
+		<fieldset>
+			<input onfocus="this.select()" onkeyup="this.select()"
+				placeholder="?" [ngModel]="params.char" (ngModelChange)="params.char = $event;getSprintName()"
+				maxlength="1" autofocus>
+		</fieldset>
+
+		<fieldset>
+			<md-checkbox [checked]="adverb" (change)="adverb = $event.checked">adberb</md-checkbox>
+
+			<md-radio-group [value]="params.mood" (change)="params.mood = $event.value">
+				<md-radio-button value="realistic">realistic</md-radio-button>
+				<md-radio-button value="utopic">utopic</md-radio-button>
+			</md-radio-group>
+		</fieldset>
+
+		<kbd>$ sprint-name {{params.char ? params.char + ' ' : ''}}--mood={{params.mood}} {{adverb ? '--adverb' : ''}}</kbd>
+
+	</md-card-content>
+
+	<md-card-actions>
+		<button md-raised-button color="accent" (click)="getSprintName()">Generate</button>
+	</md-card-actions>
+
+</md-card>

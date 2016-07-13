@@ -1,0 +1,14 @@
+<md-toolbar color="primary">
+	<h3>raider {{version}}</h3>
+  <span class="fill"></span>
+	<a md-button [routerLinkActive]="'active'" [routerLink]="['/home']">
+		Raider
+	</a>
+	<a md-button [routerLinkActive]="'active'" [routerLink]="['/about']">
+		About
+	</a>
+</md-toolbar>
+
+<main>
+	<router-outlet></router-outlet>
+</main>

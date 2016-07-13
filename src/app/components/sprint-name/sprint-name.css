@@ -1,0 +1,49 @@
+::selection {
+  background: #009688;
+	color: #fff;
+}
+::-moz-selection {
+  background: #009688;
+	color: #fff;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.flex.row {
+		flex-direction: row;
+}
+
+input {
+	border-width: 0 0 1px 0;
+	outline: none;
+	max-width: 58px;
+	font-size: 58px;
+	padding-left: 12px;
+  text-transform: uppercase;
+}
+
+fieldset {
+	max-width: 150px;
+	display: inline-block;
+	border: none;
+}
+
+button {
+	text-transform: uppercase;
+}
+
+kbd {
+	background: #eee;
+	padding: 8px;
+	max-width: 360px;
+  overflow-x: auto;
+}
+
+md-checkbox {
+	display: inline-block;
+	margin-bottom: 8px;
+}

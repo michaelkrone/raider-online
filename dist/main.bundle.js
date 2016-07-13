@@ -7,10 +7,10 @@ webpackJsonp([2],{
 	var common_1 = __webpack_require__(35);
 	var platform_browser_dynamic_1 = __webpack_require__(355);
 	var http_1 = __webpack_require__(230);
-	// import {enableProdMode} from '@angular/core';
+	var core_1 = __webpack_require__(1);
 	var app_routes_1 = __webpack_require__(546);
 	var app_1 = __webpack_require__(547);
-	// enableProdMode()
+	core_1.enableProdMode();
 	platform_browser_dynamic_1.bootstrap(app_1.App, [
 	    http_1.HTTP_PROVIDERS,
 	    app_routes_1.APP_ROUTER_PROVIDERS,
